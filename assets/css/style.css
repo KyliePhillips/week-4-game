@@ -1,0 +1,15 @@
+body {
+  background-image:"../images/bg.png";
+  
+}
+
+h1 {
+  background-color: red;
+  color: white;
+}
+
+p {
+  font-family: "Abril Fatface", cursive;
+
+  color: peachpuff;
+}
