@@ -3,8 +3,9 @@
 <head>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/reset.css">
-  <script type="text/javascript" href="assets/javascript/game.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <script src="assets/javascript/jquery-3.1.1.min.js"></script>
 </head>
 
 <body>
@@ -18,23 +19,48 @@
   </p>
   <p>The value of each crystal is hidden from you until you click on it</p>
   <p>Each time when the game starts, the game will change the value of each crystal</p>
-  <p>You __</p>
-  <p>Wins:_</p>
-  <p>Losses:_</p>
+  <p>You __
+    <span id="userTotal">
 
-  <p>Your total score is: </p>
+    </span>
+  </p>
+
+  <div class="wins-container">
+    <p>Wins:_
+      <span id="wins">
+
+      </span>
+    </p>
+  </div>
+  <div class="losses-container">
+    <p>Losses:_
+      <span id="losses">
+
+      </span>
+    </p>
+  </div>
+
+  <div class="current-score-container">
+    <p>Your total score is:
+      <span id="currentScore">
+
+      </span>
+    </p>
+  </div>
+
   <div class="row text-center">
     <div class="col-sm-3">
-      <img src="assets/images/amethyst.png" class="img-thumnail red" alt="Lavendar Crystal" width="120" height="120" />
+      <img src="assets/images/amethyst.png" class="img-thumnail lavendar" value="Crys1" width="120" height="120" />
+
     </div>
     <div class="col-sm-3">
-      <img src="assets/images/rose_q.jpg" class="img-thumbnail blue" alt="Pink Crystal" width="130" height="120" />
+      <img src="assets/images/rose_q.jpg" class="img-thumbnail pink" value="Crys2" width="130" height="120" />
     </div>
     <div class="col-sm-3">
-      <img src="assets/images/sapphire.png" class="img-thumnail yellow" alt="BlueCrystal" width="120" height="120" />
+      <img src="assets/images/sapphire.png" class="img-thumnail blue" value="Crys3" width="120" height="120" />
     </div>
     <div class="col-sm-3">
-      <img src="assets/images/topaz_.png" class="img-thumnail green" alt="Orange Crystal" width="130" height="120" />
+      <img src="assets/images/topaz_.png" class="img-thumnail orange" value="Crys4" width="130" height="120" />
     </div>
 
 </body>
